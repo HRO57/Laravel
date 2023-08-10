@@ -1,0 +1,272 @@
+/* public/css/landing-page.css */
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+}
+
+.login-registration-buttons {
+    display: flex;
+    justify-content: center;
+    /* margin-top: 20px; */
+}
+
+.login-registration-buttons a {
+    display: inline-block;
+    padding: 10px 20px;
+    margin: 0 10px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    border: 1px solid #3490dc;
+    border-radius: 5px;
+    color: #3490dc;
+    background-color: white;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.login-registration-buttons a:hover {
+    background-color: #3490dc;
+    color: white;
+}
+
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-gap: 20px;
+    margin-bottom: 5rem;
+}
+
+.product-card {
+    background-color: #f9f9f9;
+    border: 1px solid #e0e0e0;
+    padding: 20px;
+}
+
+/* search */
+
+/* Add your other CSS styles here */
+
+/* Search bar styles */
+.table-search {
+    display: flex;
+    align-items: center;
+    margin-bottom: 50px;
+}
+
+.search-select {
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+}
+
+.search-input {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px 0 0 5px;
+    width: 500px;
+}
+
+
+/* Styles for the product image container */
+.product-image {
+    text-align: center; /* Center the image horizontally */
+    padding: 10px; /* Add some padding around the image */
+    border-radius: 4px; /* Add rounded corners to the container */
+    margin-bottom: 20px; /* Add some bottom margin to separate the images */
+}
+
+/* Additional styles for the image itself */
+.product-image img {
+    width: 300px; /* Make sure the image doesn't exceed its container width */
+    height: 300px; /* Allow the image to adjust its height proportionally */
+
+}
+
+
+.product-details h3 {
+    margin-top: 0;
+}
+
+.product-details .description {
+    color: #6a727a;
+    font-weight: 500;
+}
+
+.product-details .price {
+    font-weight: bold;
+}
+
+.product-details .discount-price {
+    font-weight: bold;
+    color: #00a82d; /* Add your desired color for discount price */
+}
+
+.product-details .category {
+    margin-bottom: 10px;
+}
+
+.add-to-cart-btn {
+    display: block;
+    padding: 10px 15px;
+    background-color: #00a0e9; /* Add your desired color for "Add to Cart" button */
+    color: #fff;
+    text-align: center;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+.add-to-cart-btn:hover {
+    background-color: #0087c3; /* Add your desired hover color */
+}
+
+
+    .icons-container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 20px;    
+    }
+
+    .icons-container-btn {
+        display: inline-block;
+        background-color: #5faafb;
+        color: #fff;
+        padding: 8px 16px;
+        border: none;
+        border-radius: 5px;
+        text-decoration: none;
+        transition: background-color 0.3s ease;
+    }
+
+    .icons-container a {
+        color: #333;
+        text-decoration: none;
+        font-size: 20px;
+        margin-right: 10px;
+        transition: color 0.3s ease;
+    }
+    .icons-container a:hover {
+        color:white;
+    }
+
+    .hero-banner {
+        position: relative;
+        height: 300px; 
+        text-align: center;
+        color:black;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: #a7e5ff;
+    }
+
+    .hero-banner h2 {
+        font-size: 32px;
+        font-weight: bold;
+        margin-bottom: 20px;
+    }
+
+    .product-class {
+            margin-top: 30px; /* Add top margin */
+            margin-bottom: 20px; /* Add bottom margin */
+            padding: 10px; /* Add padding */
+            background-color: #f0f0f0; /* Add a background color */
+            text-align: center;
+        }
+
+
+        .shadow {
+            box-shadow: 10px 10px 30px black;
+            margin-right: 2%;
+            margin-left: 6%;
+            padding: 2.5%;
+            border-radius: 30px;
+            margin-top: 50px;
+        }
+
+        .fifth-container {
+            display: flex;
+        }
+
+        .bonusbox {
+            width: 25%;
+            margin-left: 10%;
+        }
+
+
+
+        .address-details{
+            margin-top: 50px;
+            background-color: #f9f9f9;
+            border: 1px solid #e0e0e0;
+            padding: 20px;
+        }
+
+        /* Footer styles */
+        footer{
+            background-color: black;
+            color: white;
+            padding: 5%;
+            text-align: center;
+            margin-top: 2rem;
+        }
+        footer p{
+            text-align: center;
+            margin-top: 20px;
+        }
+        .footer-text-color{
+            color:green;
+        }
+
+
+/* Responsive styles */
+
+@media screen and (max-width: 1200px) {
+    .container {
+        padding: 10px; /* Reduce container padding on smaller screens */
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .product-grid {
+        grid-template-columns: 1fr; /* Change to a single column on smaller screens */
+    }
+
+    .product-image img {
+        max-width: 100%; /* Ensure the image doesn't exceed its container width on smaller screens */
+    }
+}
+
+@media screen and (max-width: 767px) {
+    /* Adjust container padding for smaller screens */
+    .container {
+        padding: 10px;
+    }
+
+    /* Adjust grid columns for smaller screens */
+    .product-grid {
+        grid-template-columns: 1fr;
+    }
+
+    /* Adjust search input width for smaller screens */
+    .search-input {
+        width: 100%;
+    }
+
+    /* Adjust product image size for smaller screens */
+    .product-image img {
+        width: 100%;
+        height: auto;
+    }
+
+    /* Adjust hero banner height for smaller screens */
+    .hero-banner {
+        height: 200px;
+    }
+}
